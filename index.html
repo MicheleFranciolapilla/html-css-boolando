@@ -14,13 +14,16 @@
     <header>
         <!-- Nello header prenderà posto la barra superiore, posizionata fixed; le si potrebbe dare display flex per poi posizionare i suoi 3 elementi con justify-content -->
         <!-- Si fara' in modo di non avere tutti gli elementi visualizzabili nella viewport (scrollbar verticale) per dare senso al fixed della top bar -->
+        <div id="top_bar" class="fixed flexbox"></div>
     </header>
     <main>
         <!-- Il main sarà un flexbox wrap (3 per fila), posizionato absolute e centrato nella pagina. Le singole cards, unitamente ai dati (prezzo e prodotto) saranno i flex items. Le cards (e non i dati) avranno posizionamento relative mentre il cuore e gli sconti saranno posizionamenti absolute sulle cards.
         L'idea e' di sovrapporre le due foto (normale e hover) e di gestire l'effetto hover mediante visibility o opacity (effetto layover)-->
+        <div id="card_set" class="rel flexbox"></div>
     </main>
     <footer>
         <!-- Il footer sarà un flexbox -->
+        <div id="bottom_bar" class="rel flexbox"></div>
     </footer>
 </body>
 </html>
