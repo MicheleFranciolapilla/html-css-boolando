@@ -40,6 +40,7 @@
     padding: 50px 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-between;
 }
 
 .centered{
@@ -49,6 +50,7 @@
 
 .card {
     width: 30%;
+    padding: 20px 0;
 }
 
 .card .image_b{
@@ -84,14 +86,14 @@
     left: 0;
 }
 
-.card .discount span:first-child{
+.card .discount .span_red{
     display: inline-block;
     background-color: red;
     padding: 5px 10px;
     margin-right: 5px;
 }
 
-.card .discount span:last-child{
+.card .discount .span_green{
     background-color: green;
     padding: 5px 10px;
 }
