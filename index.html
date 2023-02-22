@@ -20,9 +20,11 @@
         <!-- Il main sarà un flexbox wrap (3 per fila), posizionato absolute e centrato nella pagina. Le singole cards, unitamente ai dati (prezzo e prodotto) saranno i flex items. Le cards (e non i dati) avranno posizionamento relative mentre il cuore e gli sconti saranno posizionamenti absolute sulle cards.
         L'idea e' di sovrapporre le due foto (normale e hover) e di gestire l'effetto hover mediante visibility o opacity (effetto layover)-->
         <div id="card_set" class="centered rel flexbox">
+            <!-- Card nr 1 -->
             <div class="card">
                 <div class="rel">
-                    <img class="image block" src="assets/img/1.webp" alt="prima foto" width="100%">
+                    <img class="rel image block" src="assets/img/1.webp" alt="prima foto" width="100%">
+                    <img class="abs image_b block" src="assets/img/1b.webp" alt="prima foto B" width="100%">
                     <div class="abs cuore">&hearts;</div>
                     <div class="abs discount">
                         <span>-50%</span>
