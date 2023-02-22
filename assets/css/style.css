@@ -37,8 +37,9 @@
 
 #card_set{
     margin-top: 60px;
-    background-color: gray;
+    padding: 50px 0;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .centered{
