@@ -46,7 +46,9 @@
 }
 
 #top_bar .top_options,
-#top_bar .top_icons{
+#top_bar .top_icons,
+#bottom_bar .bottom_options,
+#bottom_bar .bottom_icons{
     padding: 10px;
     color: white;
 }
@@ -126,17 +128,17 @@
     text-decoration: line-through;
 }
 
-
-
-
-
-
-
-
-
 #bottom_bar{
     width: 100%;
     height: 100px;
     background-color: blue;
     transform: translate(0, 60px);
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+#bottom_bar h3{
+    color: white;
+    padding-left: 10px;
 }
