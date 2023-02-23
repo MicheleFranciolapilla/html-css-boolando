@@ -15,9 +15,30 @@
         <!-- Nello header prenderà posto la barra superiore, posizionata fixed; le si potrebbe dare display flex per poi posizionare i suoi 3 elementi con justify-content -->
         <!-- Si fara' in modo di non avere tutti gli elementi visualizzabili nella viewport (scrollbar verticale) per dare senso al fixed della top bar -->
         <div id="top_bar" class="p_fixed d_flex">
-            <span>Donna Uomo Bambini</span>
+            <!-- gli "ul" possono anche non essere flex ma, nel caso, i loro "li" devono essere "inline-block" -->
+            <ul class="d_flex reset_list_style">
+                <li>
+                    <a class="reset_dec top_options" href="#">Donna</a>
+                </li>
+                <li>
+                    <a class="reset_dec top_options" href="#">Uomo</a>
+                </li>
+                <li>
+                    <a class="reset_dec top_options" href="#">Bambini</a>
+                </li>
+            </ul>
             <img src="assets/img/boolean-logo.png" alt="logo boolean" height="30px">
-            <span>I1 I2 I3</span>
+            <ul class="d_flex reset_list_style">
+                <li>
+                    <a class="reset_dec top_icons" href="#">I1</a>
+                </li>
+                <li>
+                    <a class="reset_dec top_icons" href="#">I2</a>
+                </li>
+                <li>
+                    <a class="reset_dec top_icons" href="#">I3</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -137,7 +158,12 @@
     </main>
     <footer>
         <!-- Il footer sarà un flexbox -->
-        <div id="bottom_bar" class="p_rel d_flex"></div>
+        <div id="bottom_bar" class="p_rel d_flex">
+            <div>
+                <h3>Boolean s.r.l.</h3>
+
+            </div>
+        </div>
     </footer>
 </body>
 </html>

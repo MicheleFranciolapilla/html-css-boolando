@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+.reset_list_style{
+    list-style: none;
+}
+
+.reset_dec{
+    text-decoration: none;
+}
+
 .d_flex{
     display: flex;
 }
@@ -35,6 +43,12 @@
     background-color: orangered;
     justify-content: space-around;
     align-items: center;
+}
+
+#top_bar .top_options,
+#top_bar .top_icons{
+    padding: 10px;
+    color: white;
 }
 
 #card_set{
