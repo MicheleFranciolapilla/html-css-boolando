@@ -7,6 +7,9 @@
     font-weight: 200;
 }
 
+/* Classi di tipo reset e utilities */
+/************************************/
+
 .reset_list_style{
     list-style: none;
 }
@@ -39,7 +42,10 @@
 .p_fixed{
     position: fixed;
 }
-/*******************************/
+
+/************************************/
+
+/* Barra superiore */
 #top_bar{
     width: 100%;
     height: 60px;
@@ -50,6 +56,7 @@
     background-color: #FF6900;
 }
 
+/* Attributi comuni ad elementi nella barra superiore e nel footer */
 #top_bar .top_options,
 #top_bar .top_icons,
 #bottom_bar .bottom_options,
@@ -58,6 +65,7 @@
     color: white;
 }
 
+/* Contenitore flexbox con le cards all'interno */
 #card_set{
     margin-top: 60px;
     padding: 50px 0;
@@ -117,8 +125,15 @@
     padding: 5px 10px;
 }
 
-/* .cuore:hover .overlay, 
-.discount:hover .overlay, */
+/* .cuore:hover .card .overlay{
+    opacity: 1;
+
+}
+.discount:hover .card .overlay{
+    opacity: 1;
+
+} */
+
 .card .overlay:hover{
     opacity: 1;
 }
@@ -133,11 +148,11 @@
     text-decoration: line-through;
 }
 
+/* Footer */
 #bottom_bar{
     width: 100%;
     height: 100px;
     background-color:#1A1A1A;
-    transform: translate(0, 60px);
     text-align: left;
 }
 

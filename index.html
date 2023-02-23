@@ -22,10 +22,9 @@
 
 <body>
     <header>
-        <!-- Nello header prenderà posto la barra superiore, posizionata fixed; le si potrebbe dare display flex per poi posizionare i suoi 3 elementi con justify-content -->
-        <!-- Si fara' in modo di non avere tutti gli elementi visualizzabili nella viewport (scrollbar verticale) per dare senso al fixed della top bar -->
+        <!-- In header abbiamo la barra superiore (fixed) e (flex) contenente un gruppo di link, il logo ed "icone action". Il gruppo dei link (a sinistra) e le "action icons" (a destra) sono organizzate mediante "ul"; le "ul" sono anch'esse (flex), in alternativa si sarebbe dovuto dare agli "li" un display "inline-block"  -->
         <div id="top_bar" class="p_fixed d_flex flex_around_center">
-            <!-- gli "ul" possono anche non essere flex ma, nel caso, i loro "li" devono essere "inline-block" -->
+            <!-- Gruppo dei link (sottomenu) a sinistra della barra superiore -->
             <ul class="d_flex reset_list_style">
                 <li>
                     <a class="reset_dec top_options" href="#">Donna</a>
@@ -37,7 +36,9 @@
                     <a class="reset_dec top_options" href="#">Bambini</a>
                 </li>
             </ul>
+            <!-- Logo Boolean (al centro) -->
             <img src="assets/img/boolean-logo.png" alt="logo boolean" height="30px">
+            <!-- Gruppo delle "action-icons" a destra della barra superiore -->
             <ul class="d_flex reset_list_style">
                 <li>
                     <a class="reset_dec top_icons" href="#">
@@ -58,8 +59,7 @@
         </div>
     </header>
     <main>
-        <!-- Il main sarà un flexbox wrap (3 per fila), posizionato absolute e centrato nella pagina. Le singole cards, unitamente ai dati (prezzo e prodotto) saranno i flex items. Le cards (e non i dati) avranno posizionamento relative mentre il cuore e gli sconti saranno posizionamenti absolute sulle cards.
-        L'idea e' di sovrapporre le due foto (normale e hover) e di gestire l'effetto hover mediante visibility o opacity (effetto layover)-->
+        <!-- Nel main abbiamo il blocco #card_set che e' un contenitore (flex wrap) dentro il quale hanno posto le cards (flex items). Le singole cards si compongono di una fotografia di base coperta da una in layover (visualizzata al passaggio del mouse) ed una serie di dati relativi al prodotto. Sulle foto si trovano due blocchi (posizionati absolute), il primo dei quali, in basso a sinistra indica l'eventuale sconto piu' un'altra eventuale informazione, mentre il secondo, in alto a destra, racchiude un cuore nero che diventa rosso al passaggio del mouse -->
         <div id="card_set" class="centered p_rel d_flex">
             <!-- Card nr 1 -->
             <div class="card">
@@ -173,8 +173,9 @@
         </div>
     </main>
     <footer>
-        <!-- Il footer sarà un flexbox -->
-        <div id="bottom_bar" class="p_rel d_flex flex_around_center">
+        <!-- Nel footer (flex) sono presenti un div a sinistra (#bottom_left) contenente un "h3" ed una "ul" con un sottomenu, un div vuoto al centro, utilizzato semplicemente per un piu' agevole posizionamento dei div laterali ed infine un div a destra (#bottom_right) strutturato similmente al #bottom_left salvo per avere nella "ul" le icone dei principali social -->
+        <div id="bottom_bar" class="d_flex flex_around_center">
+            <!-- Blocco con, all'interno i sottomenu del footer -->
             <div id="bottom_left">
                 <h3>Boolando s.r.l.</h3>
                 <ul class="d_flex reset_list_style">
@@ -189,7 +190,9 @@
                     </li>
                 </ul>
             </div>
+            <!-- Blocco vuoto (di comodita') -->
             <div id="empty"></div>
+            <!-- Blocco con, all'interno le icone dei social media -->
             <div id="bottom_right">
                 <h3>Trovaci anche su</h3>
                 <ul class="d_flex reset_list_style">
