@@ -14,25 +14,29 @@
     <header>
         <!-- Nello header prenderà posto la barra superiore, posizionata fixed; le si potrebbe dare display flex per poi posizionare i suoi 3 elementi con justify-content -->
         <!-- Si fara' in modo di non avere tutti gli elementi visualizzabili nella viewport (scrollbar verticale) per dare senso al fixed della top bar -->
-        <div id="top_bar" class="fixed flexbox"></div>
+        <div id="top_bar" class="p_fixed d_flex">
+            <span>Donna Uomo Bambini</span>
+            <img src="assets/img/boolean-logo.png" alt="logo boolean" height="30px">
+            <span>I1 I2 I3</span>
+        </div>
     </header>
     <main>
         <!-- Il main sarà un flexbox wrap (3 per fila), posizionato absolute e centrato nella pagina. Le singole cards, unitamente ai dati (prezzo e prodotto) saranno i flex items. Le cards (e non i dati) avranno posizionamento relative mentre il cuore e gli sconti saranno posizionamenti absolute sulle cards.
         L'idea e' di sovrapporre le due foto (normale e hover) e di gestire l'effetto hover mediante visibility o opacity (effetto layover)-->
-        <div id="card_set" class="centered rel flexbox">
+        <div id="card_set" class="centered p_rel d_flex">
             <!-- Card nr 1 -->
             <div class="card">
-                <div class="rel">
-                    <img class="rel image block" src="assets/img/1.webp" alt="prima foto" width="100%">
-                    <img class="abs image_b block" src="assets/img/1b.webp" alt="prima foto B" width="100%">
-                    <div class="abs cuore">&hearts;</div>
-                    <div class="abs discount">
+                <div class="p_rel">
+                    <img class="p_rel d_block" src="assets/img/1.webp" alt="prima foto" width="100%">
+                    <img class="p_abs overlay d_block" src="assets/img/1b.webp" alt="prima foto B" width="100%">
+                    <div class="p_abs cuore">&hearts;</div>
+                    <div class="p_abs discount">
                         <span class="span_red">-50%</span>
                         <span class="span_green">Sostenibilità</span>
                     </div>
                 </div>
                 <div class="dati">
-                    <span class="block">Levi's</span>
+                    <span class="d_block">Levi's</span>
                     <h3>RELAXED FIT TEE UNISEX</h3>
                     <span class="color_red"><strong>14.99 &euro;</strong></span>
                     <span class="old_price">29.99 &euro;</span>
@@ -41,16 +45,16 @@
 
             <!-- Card nr 2 -->
             <div class="card">
-                <div class="rel">
-                    <img class="rel image block" src="assets/img/2.webp" alt="seconda foto" width="100%">
-                    <img class="abs image_b block" src="assets/img/2b.webp" alt="seconda foto B" width="100%">
-                    <div class="abs cuore">&hearts;</div>
-                    <div class="abs discount">
+                <div class="p_rel">
+                    <img class="p_rel d_block" src="assets/img/2.webp" alt="seconda foto" width="100%">
+                    <img class="p_abs overlay d_block" src="assets/img/2b.webp" alt="seconda foto B" width="100%">
+                    <div class="p_abs cuore">&hearts;</div>
+                    <div class="p_abs discount">
                         <span class="span_red" >-30%</span>
                     </div>
                 </div>
                 <div class="dati">
-                    <span class="block">Guess</span>
+                    <span class="d_block">Guess</span>
                     <h3>ROSES TEE</h3>
                     <span class="color_red"><strong>20.99 &euro;</strong></span>
                     <span class="old_price">29.99 &euro;</span>
@@ -59,16 +63,16 @@
 
             <!-- Card nr 3 -->
             <div class="card">
-                <div class="rel">
-                    <img class="rel image block" src="assets/img/3.webp" alt="terza foto" width="100%">
-                    <img class="abs image_b block" src="assets/img/3b.webp" alt="terza foto B" width="100%">
-                    <div class="abs cuore">&hearts;</div>
-                    <div class="abs discount">
+                <div class="p_rel">
+                    <img class="p_rel d_block" src="assets/img/3.webp" alt="terza foto" width="100%">
+                    <img class="p_abs overlay d_block" src="assets/img/3b.webp" alt="terza foto B" width="100%">
+                    <div class="p_abs cuore">&hearts;</div>
+                    <div class="p_abs discount">
                         <span class="span_red" >-30%</span>
                     </div>
                 </div>
                 <div class="dati">
-                    <span class="block">Come Zucchero Filato</span>
+                    <span class="d_block">Come Zucchero Filato</span>
                     <h3>VOGLIA DI COLORI PASTELLO</h3>
                     <span class="color_red"><strong>129.99 &euro;</strong></span>
                     <span class="old_price">184.99 &euro;</span>
@@ -77,17 +81,17 @@
 
             <!-- Card nr 4 -->
             <div class="card">
-                <div class="rel">
-                    <img class="rel image block" src="assets/img/4.webp" alt="quarta foto" width="100%">
-                    <img class="abs image_b block" src="assets/img/4b.webp" alt="quarta foto B" width="100%">
-                    <div class="abs cuore">&hearts;</div>
-                    <div class="abs discount">
+                <div class="p_rel">
+                    <img class="p_rel d_block" src="assets/img/4.webp" alt="quarta foto" width="100%">
+                    <img class="p_abs overlay d_block" src="assets/img/4b.webp" alt="quarta foto B" width="100%">
+                    <div class="p_abs cuore">&hearts;</div>
+                    <div class="p_abs discount">
                         <span class="span_red" >-50%</span>
                         <span class="span_green">Sostenibilità</span>
                     </div>
                 </div>
                 <div class="dati">
-                    <span class="block">Levi's</span>
+                    <span class="d_block">Levi's</span>
                     <h3>TEE UNISEX</h3>
                     <span class="color_red"><strong>14.99 &euro;</strong></span>
                     <span class="old_price">29.99 &euro;</span>
@@ -96,15 +100,15 @@
    
             <!-- Card nr 5 -->
             <div class="card">
-                <div class="rel">
-                    <img class="rel image block" src="assets/img/5.webp" alt="quinta foto" width="100%">
-                    <img class="abs image_b block" src="assets/img/5b.webp" alt="quinta foto B" width="100%">
-                    <div class="abs cuore">&hearts;</div>
-                    <div class="abs discount">
+                <div class="p_rel">
+                    <img class="p_rel d_block" src="assets/img/5.webp" alt="quinta foto" width="100%">
+                    <img class="p_abs overlay d_block" src="assets/img/5b.webp" alt="quinta foto B" width="100%">
+                    <div class="p_abs cuore">&hearts;</div>
+                    <div class="p_abs discount">
                     </div>
                 </div>
                 <div class="dati">
-                    <span class="block">Maya Deluxe</span>
+                    <span class="d_block">Maya Deluxe</span>
                     <h3>STRIPE BODICE</h3>
                     <span class="color_red"><strong>99.99 &euro;</strong></span>
                     <span class="old_price"></span>
@@ -113,16 +117,16 @@
 
             <!-- Card nr 6 -->
             <div class="card">
-                <div class="rel">
-                    <img class="rel image block" src="assets/img/6.webp" alt="sesta foto" width="100%">
-                    <img class="abs image_b block" src="assets/img/6b.webp" alt="sesta foto B" width="100%">
-                    <div class="abs cuore">&hearts;</div>
-                    <div class="abs discount">
+                <div class="p_rel">
+                    <img class="p_rel d_block" src="assets/img/6.webp" alt="sesta foto" width="100%">
+                    <img class="p_abs overlay d_block" src="assets/img/6b.webp" alt="sesta foto B" width="100%">
+                    <div class="p_abs cuore">&hearts;</div>
+                    <div class="p_abs discount">
                         <span class="span_green">Sostenibilità</span>
                     </div>
                 </div>
                 <div class="dati">
-                    <span class="block">Esprit</span>
+                    <span class="d_block">Esprit</span>
                     <h3>MAGLIONE - BLACK</h3>
                     <span class="color_red"><strong>29.99 &euro;</strong></span>
                     <span class="old_price"></span>
@@ -133,7 +137,7 @@
     </main>
     <footer>
         <!-- Il footer sarà un flexbox -->
-        <div id="bottom_bar" class="rel flexbox"></div>
+        <div id="bottom_bar" class="p_rel d_flex"></div>
     </footer>
 </body>
 </html>
