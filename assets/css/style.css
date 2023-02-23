@@ -13,6 +13,11 @@
     text-decoration: none;
 }
 
+.flex_around_center{
+    justify-content: space-around;
+    align-items: center;
+}
+
 .d_flex{
     display: flex;
 }
@@ -40,9 +45,7 @@
     left: 0;
     right: 0;
     z-index: 999;
-    background-color: orangered;
-    justify-content: space-around;
-    align-items: center;
+    background-color: #FF6900;
 }
 
 #top_bar .top_options,
@@ -131,10 +134,8 @@
 #bottom_bar{
     width: 100%;
     height: 100px;
-    background-color: blue;
+    background-color: #1A1A1A;
     transform: translate(0, 60px);
-    justify-content: space-around;
-    align-items: center;
     text-align: left;
 }
 

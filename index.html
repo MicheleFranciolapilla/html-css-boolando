@@ -14,7 +14,7 @@
     <header>
         <!-- Nello header prenderà posto la barra superiore, posizionata fixed; le si potrebbe dare display flex per poi posizionare i suoi 3 elementi con justify-content -->
         <!-- Si fara' in modo di non avere tutti gli elementi visualizzabili nella viewport (scrollbar verticale) per dare senso al fixed della top bar -->
-        <div id="top_bar" class="p_fixed d_flex">
+        <div id="top_bar" class="p_fixed d_flex flex_around_center">
             <!-- gli "ul" possono anche non essere flex ma, nel caso, i loro "li" devono essere "inline-block" -->
             <ul class="d_flex reset_list_style">
                 <li>
@@ -158,9 +158,9 @@
     </main>
     <footer>
         <!-- Il footer sarà un flexbox -->
-        <div id="bottom_bar" class="p_rel d_flex">
+        <div id="bottom_bar" class="p_rel d_flex flex_around_center">
             <div id="bottom_left">
-                <h3>Boolean s.r.l.</h3>
+                <h3>Boolando s.r.l.</h3>
                 <ul class="d_flex reset_list_style">
                     <li>
                         <a class="reset_dec bottom_options" href="#">Informazioni legali</a>
